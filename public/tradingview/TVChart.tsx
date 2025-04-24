@@ -202,12 +202,12 @@ export default function TVChart({
       time_frames: [],
       symbol: poolId, // Default symbol
 
-      _datafeed: new ChartDataFeed({ connection, mintInfo, mintBInfo, curveType }),
-      get datafeed() {
-        return this._datafeed
-      },
-      set datafeed(value) {
-        this._datafeed = value
+      datafeed: new ChartDataFeed({ connection, mintInfo, mintBInfo, curveType }),
+      interval: (resolutionSupported ? savedResolution : birdeye ? '15' : '5') as ResolutionString,
+      locale: locale as LanguageCode,
+      numeric_formatting: {
+        decimal_sign: '.',
+        _grouping_separator: undefined
       },
       interval: (resolutionSupported ? savedResolution : birdeye ? '15' : '5') as ResolutionString,
       locale: locale as LanguageCode,
