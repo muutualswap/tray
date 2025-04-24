@@ -7,7 +7,7 @@ import {
   ChartPropertiesOverrides,
   Timezone,
   Bar
-} from '@/charting_library'
+} from 'publc/tradingview/charting_library'
 import { useEffect, useMemo, useState } from 'react'
 import { Themes, THEME_NAMES, AppTheme, AppColorMode } from './TvTheme'
 import { Box, useColorMode } from '@chakra-ui/react'
