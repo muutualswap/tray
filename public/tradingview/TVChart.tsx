@@ -167,7 +167,7 @@ export default function TVChart({
     const options: TradingTerminalWidgetOptions = {
       // debug: true,
       container: id,
-      library_path: 'public/tradingview/charting_library',
+      library_path: 'public/tradingview/charting_library/',
       custom_css_url: '/tradingview.css',
       autosize: true,
       disabled_features: [
