@@ -122,7 +122,6 @@ export async function startSocket({ connection, poolId }: { connection: Connecti
         subscriptionItem.handlers.forEach((handler) => handler.callback(bar))
         arrowListener?.(lastDailyBar, bar)
       },
-      { commitment: 'confirmed' }
     )
   }
 }
