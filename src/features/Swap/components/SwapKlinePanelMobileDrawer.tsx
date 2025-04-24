@@ -24,7 +24,7 @@ import { formatCurrency, formatToRawLocaleStr } from '@/utils/numberish/formatte
 import dayjs from 'dayjs'
 
 import SwapMobileIcon from '@/icons/misc/SwapMobileIcon'
-import TVChart from '@/components/TradingView/TVChart'
+import TVChart from 'public/tradingview/TVChart'
 import { solToWSolToken } from '@/utils/token'
 
 function SwapKlinePanelMobileDrawerContent({
