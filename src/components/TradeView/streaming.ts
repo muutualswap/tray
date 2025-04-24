@@ -1,4 +1,4 @@
-import { Bar } from '@/charting_library/charting_library'
+import { Bar } from 'publc/tradingview/charting_library'
 import { ResolutionToSeconds, SymbolInfo } from './type'
 import { Connection } from '@solana/web3.js'
 import { Curve, LaunchpadPool, LaunchpadPoolInfo } from '@raydium-io/raydium-sdk-v2'
