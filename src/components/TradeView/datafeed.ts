@@ -1,7 +1,7 @@
 import { useLaunchpadStore } from '@/store'
 import { closeSocket, startSocket, subscribeOnStream, unsubscribeFromStream } from './streaming'
 import axios from '@/api/axios'
-import { ResolutionString, Bar, Timezone, SeriesFormat, VisiblePlotsSet } from 'publc/tradingview/charting_library'
+import { ResolutionString, Bar, Timezone, SeriesFormat, VisiblePlotsSet } from 'public/tradingview/charting_library'
 import { Connection } from '@solana/web3.js'
 import { ResolutionToSeconds, SymbolInfo } from './type'
 import { NATIVE_MINT } from '@solana/spl-token'
