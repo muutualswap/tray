@@ -1,7 +1,7 @@
 import { useAppStore, useTokenStore } from '@/store'
 import { subscribeOnStream, unsubscribeFromStream } from './streaming'
 import axios from '@/api/axios'
-import { ResolutionString, Bar, Timezone, SeriesFormat } from '@/charting_library/charting_library'
+import { ResolutionString, Bar, Timezone, SeriesFormat } from 'publc/tradingview/charting_library'
 import { ResolutionToSeconds, SymbolInfo } from './type'
 import { encodeStr } from '@/utils/common'
 import { solToWSol, wSolToSolString } from '@/utils/token'
