@@ -164,8 +164,8 @@ export default function TVChart({
     const resolutionSupported =
       savedResolution && ChartDataFeed.configurationData.supported_resolutions.indexOf(savedResolution as ResolutionString) > -1
 
-
-    const tvChartWidget = new Widget({
+// Initialize the trading terminal widget with the specified options
+const widget = new TradingTerminalWidget(tradingTerminalWidgetOptions);
       // debug: true,
       container: id,
       library_path: 'public/tradingview/charting_library/',
