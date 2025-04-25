@@ -160,11 +160,12 @@ export default function TVChart({
       'relative strength index.plot.linewidth': 1.5
     }
 
-    const ChartDataFeed = birdeye ? DatafeedBirdeye : Datafeed
+  const ChartDataFeed = birdeye ? DatafeedBirdeye : Datafeed
     const resolutionSupported =
       savedResolution && ChartDataFeed.configurationData.supported_resolutions.indexOf(savedResolution as ResolutionString) > -1
 
-    const options: TradingTerminalWidgetOptions = {
+
+    const tvChartWidget = new Widget({
       // debug: true,
       container: id,
       library_path: '/charting_library/charting_library/',
